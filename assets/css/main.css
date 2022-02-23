@@ -116,6 +116,10 @@ section {
   }
 }
 
+section .row ul {
+  padding-left: 2rem;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -428,9 +432,13 @@ section {
     top: 20px;
     z-index: 9999;
     right: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
   }
   .mobile-nav-toggle.bi-x {
     color: var(--color-white);
+    background: none;
   }
 
   .mobile-nav-active {
@@ -448,6 +456,10 @@ section {
     background: rgba(var(--color-secondary-rgb), 0.8);
     z-index: 9996;
   }
+
+  .header {
+    padding: 0;
+  }
 }
 /*--------------------------------------------------------------
 # Index Page
@@ -462,7 +474,10 @@ section {
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
-  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+.hero-animated .container {
+  width: auto;
+  background-color: rgb(255 255 255 / 60%);
 }
 .hero-animated h2 {
   margin: 0 0 10px 0;
@@ -476,7 +491,7 @@ section {
 }
 .hero-animated p {
   color: rgba(black, 0.8);
-  margin: 0 0 30px 0;
+  margin: 0;
   font-size: 30px;
   font-weight: 400;
 }
@@ -540,7 +555,6 @@ section {
   }
   .hero-animated p {
     font-size: 18px;
-    margin-bottom: 30px;
   }
   .hero-animated .btn-get-started, .hero-animated .btn-watch-video {
     font-size: 14px;
@@ -1351,10 +1365,6 @@ section {
   font-weight: 600;
   font-size: 36px;
   color: var(--color-secondary);
-}
-.features .tab-pane ul {
-  list-style: none;
-  padding: 0;
 }
 .features .tab-pane ul li {
   padding-bottom: 10px;
